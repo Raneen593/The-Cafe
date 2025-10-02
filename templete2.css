@@ -267,6 +267,7 @@ footer p .a {
 }
 
 /* Media Queries  */
+/* Media Queries مصححة بالكامل */
 @media (max-width: 1200px) {
     .home .text .one {
         font-size: 50px;
@@ -274,6 +275,24 @@ footer p .a {
 
     .margin-bage {
         max-width: 90%;
+        margin: 40px auto 30px;
+    }
+
+    .containar {
+        width: 300px;
+        font-size: 24px;
+    }
+
+    .menu .box2 {
+        max-width: 95%;
+    }
+
+    .menu .box2 .l-box {
+        padding: 15px;
+    }
+
+    .where .con {
+        padding: 0 10px;
     }
 }
 
@@ -282,13 +301,57 @@ footer p .a {
         font-size: 45px;
     }
 
+    .margin-bage {
+        max-width: 95%;
+        margin: 35px auto 25px;
+    }
+
     .containar {
         width: 280px;
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .fix .link {
         font-size: 18px;
+        height: auto;
+        padding: 10px;
+    }
+
+    .home {
+        height: 65vh;
+        min-height: 450px;
+    }
+
+    .home .end {
+        padding: 0 15px;
+    }
+
+    .menu .box2 .s-box {
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .menu .box2 .s-box .eat,
+    .menu .box2 .s-box .drink {
+        padding: 10px;
+    }
+
+    .menu .box2 .l-box {
+        min-height: 250px;
+        padding: 15px;
+    }
+
+    .menu-item h5 {
+        font-size: 18px;
+    }
+
+    .menu-item p {
+        font-size: 14px;
+    }
+
+    .where .con img {
+        max-width: 100%;
+        height: auto;
     }
 }
 
@@ -297,49 +360,114 @@ footer p .a {
         font-size: 40px;
     }
 
+    .margin-bage {
+        max-width: 100%;
+        margin: 30px auto 20px;
+        padding: 0 15px;
+    }
+
     .containar {
         width: 260px;
-        font-size: 22px;
+        font-size: 20px;
+        letter-spacing: 4px;
     }
 
     .menu .box2 .s-box {
-        flex-direction: column;
-        height: auto;
+        flex-direction: row;
+        height: 40px;
+        font-size: 18px;
     }
 
     .menu .box2 .s-box .eat,
     .menu .box2 .s-box .drink {
-        width: 100%;
-        margin: 5px 0;
+        width: 50%;
+        padding: 8px;
+        margin: 0;
+    }
+
+    .menu .box2 .l-box {
+        min-height: auto;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
+    .menu-item {
+        margin-bottom: 20px;
+    }
+
+    .menu-item h5 {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .menu-item p {
+        font-size: 14px;
+        line-height: 1.4;
     }
 
     .fix .link {
         font-size: 16px;
-        padding: 5px;
+        padding: 8px;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .home .end {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 15px;
+    }
+
+    .home {
+        height: 60vh;
+        min-height: 400px;
+    }
+
+    .home .text {
+        bottom: 30px;
+    }
+
+    .where .con {
+        padding: 0;
+    }
+
+    .where .con img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .form-row {
+        margin-bottom: 15px;
+    }
+
+    .form-row input {
+        padding: 12px 8px;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
     }
 }
 
 @media (max-width: 576px) {
     .home .text .one {
-        font-size: 35px;
-    }
-
-    .containar {
-        width: 240px;
-        font-size: 20px;
-        letter-spacing: 4px;
+        font-size: 32px;
+        margin-bottom: 15px;
     }
 
     .margin-bage {
-        margin: 30px auto;
-        padding: 0 15px;
+        margin: 20px auto 15px;
+        padding: 0 10px;
+    }
+
+    .containar {
+        width: 220px;
+        font-size: 18px;
+        letter-spacing: 3px;
+        padding: 8px 0;
     }
 
     .fix .link {
@@ -347,13 +475,140 @@ footer p .a {
         height: auto;
         flex-direction: column;
         align-items: center;
+        gap: 5px;
     }
 
-    .fix .link .lin {
-        margin: 5px 0;
+    .fix .link a {
+        padding: 5px 10px;
     }
 
     .home {
-        height: 60vh;
+        height: 50vh;
+        min-height: 350px;
+    }
+
+    .home .text {
+        bottom: 20px;
+    }
+
+    .home .end {
+        gap: 10px;
+    }
+
+    .w3-padding {
+        padding: 8px 16px;
+    }
+
+    .menu .box2 .s-box {
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .menu .box2 .s-box .eat,
+    .menu .box2 .s-box .drink {
+        padding: 6px;
+    }
+
+    .menu .box2 .l-box {
+        padding: 8px;
+        margin-bottom: 20px;
+    }
+
+    .menu-item {
+        margin-bottom: 15px;
+    }
+
+    .menu-item h5 {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .menu-item p {
+        font-size: 13px;
+    }
+
+    .about .p3,
+    .about .p4 {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .where .con img {
+        height: 250px;
+    }
+
+    .where .con p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .form-row input {
+        padding: 10px 8px;
+        font-size: 13px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 400px) {
+    .home .text .one {
+        font-size: 28px;
+    }
+
+    .containar {
+        width: 200px;
+        font-size: 16px;
+    }
+
+    .home {
+        height: 45vh;
+        min-height: 300px;
+    }
+
+    .margin-bage {
+        margin: 15px auto 10px;
+    }
+
+    .menu .box2 .s-box {
+        font-size: 14px;
+        height: 30px;
+    }
+
+    .menu .box2 .s-box .eat,
+    .menu .box2 .s-box .drink {
+        padding: 4px;
+    }
+
+    .menu-item h5 {
+        font-size: 14px;
+    }
+
+    .menu-item p {
+        font-size: 12px;
+    }
+
+    .where .con img {
+        height: 200px;
+    }
+
+    .where .con p {
+        font-size: 13px;
+    }
+
+    .form-row input {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 13px;
+        padding: 8px;
     }
 }
