@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templete2</title>
+    <link rel="stylesheet" href="templete2.css">
+    <link rel="stylesheet" href="images/coffeeshop.jpg">
+</head>
+<body>
+    <div class="fix">
+        <div class="link">
+            <div class="lin">
+                <a href="#home">HOME</a>
+            </div>
+            <div class="lin">
+                <a href="#about">ABOUT</a>
+            </div>
+            <div class="lin">
+                <a href="#menu">MENU</a>
+            </div>
+            <div class="lin">
+                <a href="#where">WHERE</a>
+            </div>
+        </div>
+    </div>
+    <header class="home" id="home">
+        <div class="h">
+        <div class="text">
+            <div class="one">
+                <span>
+                    the
+                    <br>
+                    cafe
+                </span>
+            </div>
+            <div class="end">
+                <div class="tx w3-padding">
+                    <span class="p1">Open from 6am to 5pm</span>
+                </div>
+                <div class="tx2 w3-padding">
+                    <span class="p2">15 Adr street, 5015</span>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+
+    </header>
+
+    <!-- Start about -->
+    <div class="about margin-bage" id="about">
+        <h2 class="containar">ABOUT THE CAFE</h2>
+        <p class="p3">The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="p4">In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well
+        as a selection of sides and salads and other good stuff</p>
+        <div class="box">
+            <div class="cont">
+                <i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i>
+                <p class="p5">Chef, Coffeeist and Owner: Liam Brown</p>
+            </div>
+        </div>
+        <img src="images/coffeeshop.jpg" alt="" style="width: 860px;">
+        <p><b>Opening hours : </b>everyday from 6am to 5pm</p>
+        <p><b>Address : </b>15 Adr street, 5015, NY</p>
+
+    </div>
+    
+    <!-- Start Menu -->
+    <div class="menu margin-bage " id="menu">
+        <h2 class="containar">THE MENU</h2>
+        <div class="box2" style="width: 851px;">
+            <div class="s-box">
+                <a href="#Eat">
+                    <div class="eat" onclick="showEat()">Eat</div>
+                </a>
+                <a href="#Drink">
+                    <div class="drink" onclick="showDrink()">Drink</div>
+                </a>
+            </div>
+            <div class="l-box">
+                <div class="Eat" id="eatMenu">
+                    <h5>Bread Basket</h5>
+                    <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+                    <br>
+                    <h5>Honey Almond Granola with Fruits</h5>
+                    <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                    <br>
+                    <h5>Belgian Waffle</h5>
+                    <p>Vanilla flavored batter with malted flour 7.50</p>
+                    <br>
+                    <h5>Scrambled eggs</h5>
+                    <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+                    <br>
+                    <h5>Blueberry Pancakes</h5>
+                    <p>With syrup, butter and lots of berries 8.50</p>
+                </div>
+                <div class="Drink" id="drinkMenu" style="display:none;">
+                    <h5>Coffee</h5>
+                    <p>Regular coffee 2.50</p>
+                    <br>
+                    <h5>Chocolato</h5>
+                    <p>Chocolate espresso with milk 4.50</p>
+                    <br>
+                    <h5>Corretto</h5>
+                    <p>Whiskey and coffee 5.00</p>
+                    <br>
+                    <h5>Iced tea</h5>
+                    <p>Hot tea, except not hot 3.00</p>
+                    <br>
+                    <h5>Soda</h5>
+                    <p>Coke, Sprite, Fanta, etc. 2.50</p>
+                </div>
+            </div>
+            <div class="img-large">
+                <img src="images/coffeehouse2.jpg" alt="" style="width: 859px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Where -->
+    <div class="where margin-bage" id="where">
+        <h2 class="containar">WHERE TO FIND US</h2>
+        <div class="con">
+            <p>Find us at some address at some place.</p>
+            <img src="images/map.jpg" alt="" style="width: 859px;">
+            <p><span>FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food
+            to satisfy the biggerst criteria of them all, both look and taste.</p>
+            <p><b>Reserve </b>a table, ask for today's special or just send us a message:</p>
+            <form action="" target="_blank">
+                <input type="text" name="Name" placeholder="Name">
+                <br>
+                <input type="number" name="People num" placeholder="How Many People">
+                <br>
+                <input type="datetime-local" placeholder="Datetime" name="datetime" value="2020-11-16T20:00">
+                <br>
+                <input type="text" placeholder="Message \ special Requirments">
+                <br>
+            </form>
+            <button>SEND MESSAGE</button>
+        </div>
+    </div> 
+    <footer>
+        <p>Powerd by
+            <a href="https://www.w3schools.com/w3css/default.asp" class="a">w3.css</a>
+        </p>
+    </footer>
+    <script>
+        function showEat() {
+            document.getElementById("eatMenu").style.display = "block";
+            document.getElementById("drinkMenu").style.display = "none";
+        }
+
+        function showDrink() {
+            document.getElementById("eatMenu").style.display = "none";
+            document.getElementById("drinkMenu").style.display = "block";
+        }
+    </script>
+    
+
+</body>
+</html>

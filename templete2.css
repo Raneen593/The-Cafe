@@ -1,0 +1,359 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Inconsolata", sans-serif;
+    background-color: #E7E9EB;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.fix {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.fix .link {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 31px;
+    padding: 7px;
+    font-size: 20px;
+}
+
+header {
+    background-image: url(./images/coffeehouse.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    /* تغيير من px ثابت إلى vh */
+    min-height: 500px;
+    /* حد أدنى للارتفاع */
+    position: relative;
+}
+
+header .link {
+    margin: 3px 9px;
+}
+
+header .link a:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    word-spacing: 9px;
+}
+
+.home {
+    position: relative;
+}
+
+.home .text {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.home .text .one {
+    font-size: 57px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.home .end {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.w3-padding {
+    padding: 12px 24px;
+}
+
+.p1 {
+    background: black;
+    color: white;
+    padding: 0 8px;
+}
+
+.p2 {
+    color: white;
+}
+
+/* Start About */
+.margin-bage {
+    max-width: 859px;
+    /* تغيير من width ثابت إلى max-width */
+    margin: 53px auto 35px;
+    /* مركز أفقي */
+    padding: 0 20px;
+    /* مساحة جانبية */
+}
+
+.containar {
+    text-align: center;
+    margin: 0 auto 42px;
+    /* مركز أفقي */
+    color: white;
+    background-color: black;
+    font-size: 27px;
+    letter-spacing: 6px;
+    width: 332px;
+    padding: 10px 0;
+}
+
+.about .p3 {
+    margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #000;
+}
+
+.about .p4 {
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.about .box {
+    background-color: #f1f1f1;
+    margin-bottom: 30px;
+    border-left: 7px solid #ccc;
+}
+
+.about .box .cont {
+    margin-left: 8px;
+    word-spacing: 13px;
+    padding: 18px;
+}
+
+.box .cont i {
+    line-height: 1.8;
+}
+
+.box .cont .p5 {
+    margin-top: 14px;
+}
+
+.about img {
+    max-width: 100%;
+    /* جعل الصورة متجاوبة */
+    height: auto;
+}
+
+.about img+p {
+    margin: 30px auto;
+    word-spacing: 7px
+}
+
+.about p:last-child {
+    word-spacing: 7px;
+    margin-bottom: 30px;
+}
+
+/* start menu */
+.menu .box2 {
+    width: 100%;
+    max-width: 851px;
+}
+
+.menu .box2 .s-box {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    font-size: 23px;
+}
+
+.menu .box2 .s-box .eat:hover,
+.menu .box2 .s-box .drink:hover {
+    background-color: gray;
+}
+
+.menu .box2 .s-box .eat,
+.menu .box2 .s-box .drink {
+    color: black;
+    width: 50%;
+    /* تقسيم متساوي */
+    height: 32px;
+    text-align: center;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.menu .box2 .l-box {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    margin-bottom: 42px;
+}
+
+.menu .box2 .l-box .Eat,
+.menu .box2 .l-box .Drink {
+    margin-top: 14px;
+    margin-left: 34px;
+    margin-bottom: 20px;
+}
+
+.menu .box2 .l-box .Eat h5,
+.menu .box2 .l-box .Drink h5 {
+    line-height: 3.8;
+    letter-spacing: 2px;
+    font-size: medium;
+}
+
+.menu .box2 .l-box .Eat p,
+.menu .box2 .l-box .Drink p {
+    color: #757575;
+}
+
+.menu .box2 .img-large img {
+    max-width: 100%;
+    /* جعل الصورة متجاوبة */
+    height: auto;
+}
+
+.where .con p {
+    margin-bottom: 13px;
+    letter-spacing: 1px;
+    margin-top: 13px;
+}
+
+.where .con span {
+    background-color: black;
+    color: white;
+    padding: 0 8px;
+}
+
+.where .con input {
+    padding: 16px 8px;
+    width: 100%;
+    margin: 12px 0;
+    box-sizing: border-box;
+    /* التأكد من أن padding لا يزيد العرض */
+}
+
+button {
+    margin-top: 26px;
+    background-color: black;
+    color: antiquewhite;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    background: #f1f1f1;
+    padding: 39px
+}
+
+footer p .a {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Media Queries  */
+@media (max-width: 1200px) {
+    .home .text .one {
+        font-size: 50px;
+    }
+
+    .margin-bage {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .home .text .one {
+        font-size: 45px;
+    }
+
+    .containar {
+        width: 280px;
+        font-size: 24px;
+    }
+
+    .fix .link {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home .text .one {
+        font-size: 40px;
+    }
+
+    .containar {
+        width: 260px;
+        font-size: 22px;
+    }
+
+    .menu .box2 .s-box {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .menu .box2 .s-box .eat,
+    .menu .box2 .s-box .drink {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .fix .link {
+        font-size: 16px;
+        padding: 5px;
+        flex-wrap: wrap;
+    }
+
+    .home .end {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .home .text .one {
+        font-size: 35px;
+    }
+
+    .containar {
+        width: 240px;
+        font-size: 20px;
+        letter-spacing: 4px;
+    }
+
+    .margin-bage {
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+
+    .fix .link {
+        font-size: 14px;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fix .link .lin {
+        margin: 5px 0;
+    }
+
+    .home {
+        height: 60vh;
+    }
+}
